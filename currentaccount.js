@@ -22,4 +22,12 @@ let currentAccount = {
       currentAccount.balance += amount;
       currentAccount.transactionHistory.push(`Deposit of ${amount}`);
       console.log(`Deposit of R${amount} successful. Current balance: R${currentAccount.balance}`);
-    }}
+    }
+    function MakTranactions(amount){
+
+      deposit(amount);
+      withdraw(2000);
+     
+  }
+  MakTranactions(10000);
+}

@@ -17,4 +17,9 @@ let currentAccount = {
       currentAccount.balance -= amount;
       currentAccount.transactionHistory.push(`Withdrawal of ${amount}`);
       console.log(`Withdrawal of R${amount} successful. Current balance: R${currentAccount.balance}`);
+    }
+    function deposit(amount) {
+      currentAccount.balance += amount;
+      currentAccount.transactionHistory.push(`Deposit of ${amount}`);
+      console.log(`Deposit of R${amount} successful. Current balance: R${currentAccount.balance}`);
     }}

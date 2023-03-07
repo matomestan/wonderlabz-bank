@@ -21,7 +21,7 @@ class SavingsAccount {
           console.log('My new balance is '+ this.balance);
          
         } else {
-          console.log("Withdrawal failed. Minimum balance of R1,000.00 required.");
+          console.log("Withdrawal failed. Minimum balance of R1,000.00 required");
         }
     }
 }

@@ -37,3 +37,7 @@ class SavingsAccount {
        this.deposit(1500);
     }
   }
+  const myObj = new SavingsAccount();
+
+  myObj.MakeTransaction(1100);
+  myObj.withdraw(900);

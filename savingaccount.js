@@ -14,4 +14,14 @@ class SavingsAccount {
           console.log("Account opening failed. Minimum deposit is R1,000.00.");
         }
       }
+      withdraw(amount) {
+        if (this.balance - amount >= 1000) {
+          this.balance -= amount;
+          this.transactionHistory.push(`Withdrawal of R${amount.toFixed(2)}`);
+          console.log('My new balance is '+ this.balance);
+         
+        } else {
+          console.log("Withdrawal failed. Minimum balance of R1,000.00 required");
+        }
     }
+}

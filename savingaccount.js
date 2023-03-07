@@ -24,4 +24,16 @@ class SavingsAccount {
           console.log("Withdrawal failed. Minimum balance of R1,000.00 required");
         }
     }
-}
+    deposit(amount) {
+      this.balance += amount;
+      this.transactionHistory.push(`Deposit of R${amount.toFixed(2)}`);
+      console.log('Latest new balance is: '+ this.balance);
+     
+    }
+   
+    MakeTransaction(amount){
+       this.openAccount(amount);
+       this.withdraw(100);
+       this.deposit(1500);
+    }
+  }
